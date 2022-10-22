@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section-1{
+    background-color: #1f2937;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header p{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header ul{
+    display: flex;
+    gap: 16px;
+    list-style: none;;
+}
+
+.header a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero{
+    display: flex;
+}
+
+.left{
+    flex: 1;
+}
+
+.left .main-text{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.left .secondary-text{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.left button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+.right{
+    flex: 1;
+}
+
+.right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    color: white;
+}
+
+.section-2{
+    text-align: center;
+}
+
+.information .main-text{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 800;
+}
+
+.information .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.information .card{
+    width: 200px;
+}
+
+.card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px #3882f6 solid;
+    background-color: gray;
+    color: white;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.section-3{
+    background-color: #e5e7eb;
+}
+
+.quote .text{
+    text-align: left;
+    font-size: 36px;
+    font-weight: 300;
+    /* font-style: italic; */
+}
+
+.quote .by{
+    text-align: right;
+    font-weight: 700;
+}
+
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-card{
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    background-color: #1f2937;
+}
