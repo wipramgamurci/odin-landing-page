@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
@@ -6,6 +6,7 @@ body{
 body{
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 
 .section-1,
@@ -24,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 16px 0px;
 }
 
 .header p{
@@ -45,35 +47,40 @@ body{
 
 .hero{
     display: flex;
+    margin: 100px 0px;
+    gap: 48px;
 }
 
-.left{
+.hero .left{
     flex: 1;
 }
 
-.left .main-text{
+.hero .left .main-text{
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
+    margin-bottom: 8px;
 }
 
-.left .secondary-text{
+.hero .left .secondary-text{
     font-size: 18px;
     color: #e5e7eb;
+    margin-bottom: 8px;
 }
 
-.left button{
+.hero .left button{
     background-color: #3882f6;
     color: #f9faf8;
     padding: 8px 24px;
     border-radius: 8px;
+    font-size: 18px;
 }
 
-.right{
+.hero .right{
     flex: 1;
 }
 
-.right div{
+.hero .right div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,10 +94,18 @@ body{
     text-align: center;
 }
 
+.section-2 .information{
+    margin-bottom: 100px;
+}
+
 .information .main-text{
     font-size: 36px;
     color: #1f2937;
     font-weight: 800;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .information .container{
@@ -101,24 +116,33 @@ body{
 }
 
 .information .card{
-    width: 200px;
+    width: 150px;
+    /* font-size: 18px; */
 }
 
 .card div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 6px #3882f6 solid;
+    border: 4px #3882f6 solid;
     background-color: gray;
     color: white;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     box-sizing: border-box;
     border-radius: 16px;
+    margin-bottom: 8px;
 }
 
 .section-3{
     background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.quote{
+    margin: 100px 0px;
+    width: 75%;
 }
 
 .quote .text{
@@ -131,6 +155,7 @@ body{
 .quote .by{
     text-align: right;
     font-weight: 700;
+    font-size: 18px;
 }
 
 .section-4{
@@ -140,8 +165,34 @@ body{
 }
 
 .signup-card{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #3882f6;
     border-radius: 8px;
+    padding: 48px 96px;
+    margin: 100px 0px;
+}
+
+.signup-card .main-text{
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.signup-card .secondary-text{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.signup-card button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border-color: #f9faf8;
+    padding: 8px 24px;
+    font-size: 18px;
 }
 
 .footer{
@@ -150,4 +201,5 @@ body{
     align-items: center;
     color: #f9faf8;
     background-color: #1f2937;
+    height: 75px;
 }
